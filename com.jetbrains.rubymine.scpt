@@ -1,0 +1,1 @@
+tell application "System Events"	tell process "RubyMine"		set AppleScript's text item delimiters to space		set foo to window 1		set bar to the name of foo		return find text "^[\\w\\/?\\w\\.\\w]*" in bar with regexp and string result	end tellend tell
